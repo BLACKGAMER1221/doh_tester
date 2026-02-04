@@ -226,7 +226,6 @@ python test_doh.py <domain> [options]
 | `--clean-output`    | `False`       | خروجی فقط URLهای سالم (هر خط یک URL)          |
 | `--json-output`     | `False`       | نوشتن خروجی JSON (خودکار یا مسیر مشخص)        |
 
-</div>
 
 ### مثال‌های استفاده
 
