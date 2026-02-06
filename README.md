@@ -46,7 +46,7 @@ DoH-Tester validates DoH endpoints at scale, testing TCP connectivity, TLS hands
 <details>
 <summary><b>🔓 Censorship Circumvention (Click to expand)</b></summary>
 
-Connect to filtered platforms like YouTube, Instagram, Twitter/X, and news sites by resolving their domains through encrypted HTTPS connections, bypassing DNS-based filtering and DNS hijacking.
+Connect to filtered platforms like YouTube, Instagram, Twitter/X, and news sites by resolving their domains through encrypted HTTPS connections, bypassing DNS-based filtering and DNS hijacking. [gfw resist HTTPS proxy](https://github.com/GFW-knocker/gfw_resist_HTTPS_proxy)
 
 **How it works:**
 - Standard DNS queries (UDP port 53) are unencrypted and easily intercepted by firewalls
