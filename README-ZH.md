@@ -48,7 +48,7 @@ DoH-Tester 可在大规模场景下验证 DoH 端点，测试 TCP 连通性、TL
 <details>
 <summary><b>🔓 绕过审查（点击展开）</b></summary>
 
-通过加密的 HTTPS 连接解析域名，访问 YouTube、Instagram、Twitter/X 及新闻网站等被过滤的平台，从而绕过基于 DNS 的过滤和 DNS 劫持。
+通过加密的 HTTPS 连接解析域名，访问 YouTube、Instagram、Twitter/X 及新闻网站等被过滤的平台，从而绕过基于 DNS 的过滤和 DNS 劫持。[gfw resist HTTPS proxy](https://github.com/GFW-knocker/gfw_resist_HTTPS_proxy)
 
 **工作原理：**
 
