@@ -744,4 +744,21 @@ def main():
     print_summary(results, out_path, args, should_json, config)
 
 if __name__ == "__main__":
-    main()
+    try:
+        # If launched without arguments (double-click case)
+        if len(sys.argv) == 1:
+            print("Example: example.com --working-only --timeout 5")
+            user_input = input("Enter arguments: ").strip()
+
+            if not user_input:
+                print("No arguments entered. Exiting.")
+                sys.exit(1)
+
+            # Properly split arguments like a real shell would
+            sys.argv.extend(shlex.split(user_input))
+
+        main()
+
+    finally:
+        if sys.stdin.isatty():
+            input("\nPress Enter to exit...")
