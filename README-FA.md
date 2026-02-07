@@ -368,6 +368,10 @@ https://doh.internal.company/dns-query
 
 ---
 
+## قالب ترمینال
+
+![terminal](terminal.PNG)
+
 ## فرمت‌های خروجی
 
 ### خروجی متنی استاندارد
