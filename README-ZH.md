@@ -368,6 +368,10 @@ https://doh.internal.company/dns-query
 
 ---
 
+## 终端格式
+
+![terminal](terminal.PNG)
+
 ## 输出格式
 
 ### 标准文本输出
