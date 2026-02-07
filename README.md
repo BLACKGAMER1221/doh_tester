@@ -359,6 +359,10 @@ https://doh.internal.company/dns-query
 
 ---
 
+## Terminal Format
+
+![terminal](terminal.PNG)
+
 ## Output Formats
 
 ### Standard Text Output
