@@ -367,6 +367,10 @@ https://doh.internal.company/dns-query
 
 ---
 
+## Формат терминала
+
+![terminal](terminal.PNG)
+
 ## Форматы вывода
 
 ### Стандартный текстовый вывод
