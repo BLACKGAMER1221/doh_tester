@@ -51,6 +51,7 @@ from pathlib import Path
 import threading
 import sys
 import signal
+import shlex
 
 import requests
 import dns.message
@@ -762,3 +763,4 @@ if __name__ == "__main__":
     finally:
         if sys.stdin.isatty():
             input("\nPress Enter to exit...")
+
