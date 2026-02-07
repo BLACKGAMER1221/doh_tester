@@ -751,16 +751,26 @@ if __name__ == "__main__":
             print("Example: example.com --working-only --timeout 5")
             user_input = input("Enter arguments: ").strip()
 
-            if not user_input:
-                print("No arguments entered. Exiting.")
+            if user_input:
+                sys.argv.extend(shlex.split(user_input))
+
+        # Now check if domain is missing
+        # Domain must be first positional argument (not starting with --)
+        has_domain = any(not arg.startswith("-") for arg in sys.argv[1:])
+
+        if not has_domain:
+            domain = input("Enter domain to test (e.g. example.com): ").strip()
+            if not domain:
+                print("No domain entered. Exiting.")
                 sys.exit(1)
 
-            # Properly split arguments like a real shell would
-            sys.argv.extend(shlex.split(user_input))
+            # Insert domain before flags (right after script name)
+            sys.argv.insert(1, domain)
 
         main()
 
     finally:
         if sys.stdin.isatty():
             input("\nPress Enter to exit...")
+
 
