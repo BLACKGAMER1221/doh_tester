@@ -508,13 +508,15 @@ https://dns.google/dns-query
 
 ## مشارکت
 
-مشارکت‌ها خوش‌آمدند! لطفاً Issue یا Pull Request ارسال کنید.
+لطفاً Issue یا Pull Request ارسال کنید.
 
 ---
 
 ## قدردانی‌ها
+<div dir="rtl" align="right">
 
-* [RFC 8484](https://tools.ietf.org/html/rfc8484) – کوئری‌های DNS روی HTTPS (DoH)
-* [dnspython](https://www.dnspython.org/) – ابزار DNS برای پایتون
-* [requests](https://requests.readthedocs.io/) – کتابخانه HTTP برای پایتون
+* ‏[RFC 8484](https://tools.ietf.org/html/rfc8484) – کوئری‌های DNS روی HTTPS (DoH)
+* ‏[dnspython](https://www.dnspython.org/) – ابزار DNS برای پایتون
+* ‏[requests](https://requests.readthedocs.io/) – کتابخانه HTTP برای پایتون
+</div>
 </div>
