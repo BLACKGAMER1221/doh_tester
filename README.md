@@ -178,6 +178,7 @@ Validate DoH infrastructure availability and compliance:
 git clone https://github.com/BLACKGAMER1221/doh_tester.git
 cd doh_tester
 ```
+you can also download windows-exe from [release page](https://github.com/BLACKGAMER1221/doh_tester/releases)
 
 ### Install Dependencies
 
