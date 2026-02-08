@@ -5,7 +5,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-
+<div dir="rtl">
 ابزاری پرسرعت و چندنخی برای تست نقاط انتهایی DNS-over-HTTPS (DoH) با تشخیص هوشمند پروتکل، فیلترگذاری قابل تنظیم و مدیریت خودکار لیست‌ها.
 
 ## 📋 معرفی
@@ -209,8 +209,8 @@ python test_doh.py --help
 ```bash
 python test_doh.py <domain> [options]
 ```
-
 ### آرگومان‌های خط فرمان
+<div dir="ltr">
 
 | آرگومان             | پیش‌فرض       | توضیح                                         |
 | ------------------- | ------------- | --------------------------------------------- |
@@ -227,7 +227,7 @@ python test_doh.py <domain> [options]
 | `--no-working-only` | -             | نمایش همه نتایج (نادیده‌گرفتن تنظیم پیکربندی) |
 | `--clean-output`    | `False`       | خروجی فقط URLهای سالم (هر خط یک URL)          |
 | `--json-output`     | `False`       | نوشتن خروجی JSON (خودکار یا مسیر مشخص)        |
-
+<div/>
 
 ### مثال‌های استفاده
 
@@ -377,6 +377,7 @@ https://doh.internal.company/dns-query
 ## فرمت‌های خروجی
 
 ### خروجی متنی استاندارد
+<div dir="ltr">
 
 ```
 # Generated: 2026-02-4 08:50:45
@@ -387,6 +388,7 @@ WORKING   https://dns.google/dns-query          dns.google          8.8.8.8     
 BLOCKED   https://blocked.doh.server/dns-query  blocked.server      -                -
 FLAKY     https://unreliable.doh/dns-query      unreliable.doh      192.0.2.1        120.5
 ```
+<div/>
 
 ### خروجی تمیز
 
@@ -517,3 +519,4 @@ https://dns.google/dns-query
 * [RFC 8484](https://tools.ietf.org/html/rfc8484) – کوئری‌های DNS روی HTTPS (DoH)
 * [dnspython](https://www.dnspython.org/) – ابزار DNS برای پایتون
 * [requests](https://requests.readthedocs.io/) – کتابخانه HTTP برای پایتون
+</div>
