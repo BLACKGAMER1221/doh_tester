@@ -2,21 +2,27 @@ name: Build Windows EXE
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
+    tags:
+      - "v*"
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: windows-latest
 
+    permissions:
+      contents: write  
+
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install dependencies
         run: |
@@ -27,8 +33,14 @@ jobs:
         run: |
           pyinstaller --onefile test_doh.py
 
-      - name: Upload EXE artifact
+      - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: doh_tester-exe
+          name: test_doh-exe
           path: dist/*.exe
+
+      - name: Create Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.exe
